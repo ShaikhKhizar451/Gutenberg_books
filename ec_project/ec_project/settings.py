@@ -83,14 +83,20 @@ WSGI_APPLICATION = 'ec_project.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'guten',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',  # Or your database host
+#         'PORT': '3306',       # Or your database port
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'guten',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',  # Or your database host
-        'PORT': '3306',       # Or your database port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
